@@ -89,6 +89,7 @@ def productivity_manager(qns, completed=0, totalTime=0):
             print("Timer paused. Hit enter to resume.")
             input("> ")
             startTime = time.time() - pauseTime + startTime
+            print("Break was", time_converter(time.time()-pauseTime), "long")
             print("Resumed")
             print_line()
         else:
